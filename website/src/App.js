@@ -15,9 +15,10 @@ import Interest from "./Pages/Interest";
 import Head from "./Heading/Head";
 import Projects from "./Pages/Projects";
 import HeadMobile from "./Heading/HeadMobile";
-import { FaArrowDown, FaLanguage } from "react-icons/fa";
+import { FaLanguage } from "react-icons/fa";
 import Analysis from "./Pages/Analysis";
-import { Route, NavLink, BrowserRouter, Redirect} from "react-router-dom";
+import { Route, NavLink, BrowserRouter, Redirect } from "react-router-dom";
+import Literature from "./Pages/Literature";
 
 class App extends Component {
   constructor(props) {
@@ -29,7 +30,7 @@ class App extends Component {
     this.analysisRef = React.createRef();
     this.state = {
       width: window.innerWidth,
-      languageIsDutch: true,
+      languageIsDutch: true
     };
   }
   componentWillMount() {
@@ -47,8 +48,9 @@ class App extends Component {
   };
 
   state = {};
-  hideFixedMenu = () => this.setState({ fixed: false, active: true});
-  showFixedMenu = () => this.setState({ fixed: true , active: false, activeButton:"Vision"});
+  hideFixedMenu = () => this.setState({ fixed: false, active: true });
+  showFixedMenu = () =>
+    this.setState({ fixed: true, active: false, activeButton: "Vision" });
   handleSidebarHide = () => this.setState({ sidebarOpened: false });
   handleToggle = () => this.setState({ sidebarOpened: true });
 
@@ -59,188 +61,113 @@ class App extends Component {
     const { fixed } = this.state;
     const Scroll = require("react-scroll");
     var scroll = Scroll.animateScroll;
-    const { sidebarOpened } = this.state;
-    const {active} = this.state;
-    //const{activeButton} = this.state;
+    const { active } = this.state;
+
     if (isMobile) {
       return (
-        < >
-          <Visibility
-          style={{ overflowY: 'hidden', overflowX: 'hidden'}}
-            once={false}
-            onBottomPassed={this.showFixedMenu}
-            onBottomPassedReverse={this.hideFixedMenu}
+        <>
+          <Segment
+            textAlign="center"
+            style={{ minHeight: 0, padding: "0em 0em" }}
+            vertical
           >
-            {/* <Menu
-              as={Menu}
-              animation="push"
-              inverted
-              onHide={this.handleSidebarHide}
-              size="medium"
-              visible={sidebarOpened}
-              fixed={fixed ? "top" : "top"}
-            >
-              <Menu.Item
-                as="a"
-                onClick={() =>
-                  scrollToComponent(this.visionRef) && this.handleSidebarHide()
-                }
-              >
-                Vision
-              </Menu.Item>
-              <Menu.Item
-                as="a"
-                onClick={() =>
-                  scrollToComponent(this.interestRef) &&
-                  this.handleSidebarHide()
-                }
-              >
-                Interest
-              </Menu.Item>
-              <Menu.Item
-                as="a"
-                onClick={() =>
-                  scrollToComponent(this.projectsRef) &&
-                  this.handleSidebarHide()
-                }
-              >
-                Projects
-              </Menu.Item>
-              <Menu.Item
-                as="a"
-                onClick={() =>
-                  scrollToComponent(this.skillsRef) && this.handleSidebarHide()
-                }
-              >
-                Skills
-              </Menu.Item>
-            </Menu> */}
-            <Sidebar.Pusher dimmed={sidebarOpened}>
-              <Segment
-               
-                textAlign="center"
-                style={{ minHeight: 0, padding: "0em 0em"}}
-                vertical
-              >
-                {/* <Container style={{ minHeight: 40, padding: "0em 0em" }} /> */}
-                <HeadMobile  setLanguage= {() => this.setState({languageIsDutch :!this.state.languageIsDutch})}/>
-              </Segment>
+            <HeadMobile
+              setLanguage={() =>
+                this.setState({
+                  languageIsDutch: !this.state.languageIsDutch
+                })
+              }
+            />
+          </Segment>
 
-              <Vision
-              language= {this.state.languageIsDutch}
-              padding='5em 0em'
-                ref={section => {
-                  this.visionRef = section;
-                }}
-              />
-              <Interest
-               language= {this.state.languageIsDutch}
-              padding='5em 0em'
-                ref={section => {
-                  this.interestRef = section;
-                }}
-              />
-                            <Analysis
-                             language= {this.state.languageIsDutch}
-              padding='5em 0em'
-                ref={section => {
-                  this.analysisRef = section;
-                }}
-              />
-              <Projects
-              isMobile= {this.isMobile}
-               language= {this.state.languageIsDutch}
-              padding='5em 0em'
-                ref={section => {
-                  this.projectsRef = section;
-                }}
-              />
-              <Skills
-               language= {this.state.languageIsDutch}
-              padding='5em 0em'
-              columns={1}
-                ref={section => {
-                  this.skillsRef = section;
-                }}
-              />
-              <Footer
-               language= {this.state.languageIsDutch}
-              padding='5em 0em'/>
-            </Sidebar.Pusher>
-          </Visibility>
+          <Vision
+            language={this.state.languageIsDutch}
+            padding="5em 0em"
+            ref={section => {
+              this.visionRef = section;
+            }}
+          />
+          <Interest
+            language={this.state.languageIsDutch}
+            padding="5em 0em"
+            ref={section => {
+              this.interestRef = section;
+            }}
+          />
+          <Analysis
+            language={this.state.languageIsDutch}
+            padding="5em 0em"
+            ref={section => {
+              this.analysisRef = section;
+            }}
+          />
+          <Projects
+            isMobile={this.isMobile}
+            language={this.state.languageIsDutch}
+            padding="5em 0em"
+            ref={section => {
+              this.projectsRef = section;
+            }}
+          />
+          <Skills
+            language={this.state.languageIsDutch}
+            padding="5em 0em"
+            columns={1}
+            ref={section => {
+              this.skillsRef = section;
+            }}
+          />
+          <Footer language={this.state.languageIsDutch} padding="5em 0em" />
         </>
       );
     } else {
       return (
         <>
-        <BrowserRouter>
+          <BrowserRouter>
             <Menu
               fixed={fixed ? "top" : "top"}
               // inverted={fixed ? !fixed : !fixed}
               secondary={fixed ? !fixed : !fixed}
               borderless
               size="huge"
-             id="menu"
+              id="menu"
             >
               <div>
-              <h1 id="title">Leven Lang Leren</h1>
-              <h6 id="subtitle">Beau Vlok (0939632)</h6>
+                <h1 id="title">Leven Lang Leren</h1>
+                <h6 id="subtitle">Beau Vlok (0939632)</h6>
               </div>
               <Container>
                 <Menu.Item position="right">
                   <Menu.Item as="a" active={active}>
-                  <NavLink to="/home">
-                   Home
-                   </NavLink>
+                    <NavLink to="/home">Home</NavLink>
                   </Menu.Item>
-                  <Menu.Item
-                    as="a"><NavLink
-                   to= "/vision"
-                  >
-                    {this.state.languageIsDutch ? "Persoonlijke visie" : "Personal vision"}
-                    </NavLink>
+                  <Menu.Item as="a">
+                    <NavLink to="/visie">Persoonlijke visie</NavLink>
                   </Menu.Item>
-                  <Menu.Item
-                    as="a"><NavLink
-                   to= "/belang"
-                  >
-                     {this.state.languageIsDutch ? "Belang" : "Interest"}
-                    </NavLink>
+                  <Menu.Item as="a">
+                    <NavLink to="/belang">Belang</NavLink>
                   </Menu.Item>
-                  <Menu.Item
-                    as="a"
-                    onClick={() => scrollToComponent(this.analysisRef)}
-                  >
-                    {this.state.languageIsDutch ? "Analyse" : "Analysis"}
+                  <Menu.Item as="a">
+                    <NavLink to="/analyse">Analyse</NavLink>
                   </Menu.Item>
-                  <Menu.Item
-                    as="a"
-                    onClick={() => scrollToComponent(this.projectsRef)}
-                  >
-                    {this.state.languageIsDutch ? "Activiteiten" : "Activities"}
+                  <Menu.Item as="a">
+                    <NavLink to="/activiteiten">Activiteiten</NavLink>
                   </Menu.Item>
-                  <Menu.Item
-                    as="a"
-                    onClick={() => scrollToComponent(this.skillsRef)}
-                  >
-                    {this.state.languageIsDutch ? "Literatuur" : "Literature"}
-                  </Menu.Item>
-                  <Menu.Item
-                    
-                    onClick={() => this.setState({languageIsDutch: !this.state.languageIsDutch})}
-                  >
-                    <FaLanguage id="language" size = '1.5em'/>
+                  <Menu.Item as="a">
+                    <NavLink to="/literatuur">Literatuur</NavLink>
                   </Menu.Item>
                 </Menu.Item>
               </Container>
             </Menu>
-            <div style={{paddingTop:"175px"}} className="content">
-            <Route exact path="/" component={DefaultRedirect} />
-          <Route path= "/home" component={Head}/>
-          <Route path= "/vision" component={Vision}/>
-          <Route path= "/belang" component={Interest}/>
-
-          </div>
+            <div style={{ paddingTop: "175px" }} className="content">
+              <Route exact path="/" component={DefaultRedirect} />
+              <Route path="/home" component={Head} />
+              <Route path="/visie" component={Vision} />
+              <Route path="/belang" component={Interest} />
+              <Route path="/analyse" component={Analysis} />
+              <Route path="/activiteiten" component={Projects} />
+              <Route path="/literatuur" component={Literature} />
+            </div>
           </BrowserRouter>
         </>
       );
