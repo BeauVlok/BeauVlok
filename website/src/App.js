@@ -117,7 +117,7 @@ class App extends Component {
             </Menu> */}
             <Sidebar.Pusher dimmed={sidebarOpened}>
               <Segment
-                inverted
+               
                 textAlign="center"
                 style={{ minHeight: 0, padding: "0em 0em"}}
                 vertical
