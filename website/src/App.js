@@ -17,6 +17,7 @@ import Projects from "./Pages/Projects";
 import HeadMobile from "./Heading/HeadMobile";
 import { FaArrowDown, FaLanguage } from "react-icons/fa";
 import Analysis from "./Pages/Analysis";
+import { Route, NavLink, BrowserRouter, Redirect} from "react-router-dom";
 
 class App extends Component {
   constructor(props) {
@@ -52,6 +53,7 @@ class App extends Component {
   handleToggle = () => this.setState({ sidebarOpened: true });
 
   render() {
+    const DefaultRedirect = () => <Redirect to="/home" />;
     const { width } = this.state;
     const isMobile = width <= 500;
     const { fixed } = this.state;
@@ -171,19 +173,7 @@ class App extends Component {
     } else {
       return (
         <>
-          {" "}
-          <Head />
-          <FaArrowDown
-            id="Arrow"
-            size="2.5em"
-            as="a"
-            onClick={() => scrollToComponent(this.visionRef)}
-          />
-          <Visibility
-            once={false}
-            onBottomPassed={this.showFixedMenu}
-            onBottomPassedReverse={this.hideFixedMenu}
-          >
+        <BrowserRouter>
             <Menu
               fixed={fixed ? "top" : "top"}
               // inverted={fixed ? !fixed : !fixed}
@@ -198,20 +188,24 @@ class App extends Component {
               </div>
               <Container>
                 <Menu.Item position="right">
-                  <Menu.Item as="a" active={active} onClick={() => scroll.scrollTo(0)}>
+                  <Menu.Item as="a" active={active}>
+                  <NavLink to="/home">
                    Home
+                   </NavLink>
                   </Menu.Item>
                   <Menu.Item
-                    as="a"
-                    onClick={() => scrollToComponent(this.visionRef)}
+                    as="a"><NavLink
+                   to= "/vision"
                   >
                     {this.state.languageIsDutch ? "Persoonlijke visie" : "Personal vision"}
+                    </NavLink>
                   </Menu.Item>
                   <Menu.Item
-                    as="a"
-                    onClick={() => scrollToComponent(this.interestRef)}
+                    as="a"><NavLink
+                   to= "/belang"
                   >
-                   {this.state.languageIsDutch ? "Belang" : "Interest"}
+                     {this.state.languageIsDutch ? "Belang" : "Interest"}
+                    </NavLink>
                   </Menu.Item>
                   <Menu.Item
                     as="a"
@@ -240,48 +234,14 @@ class App extends Component {
                 </Menu.Item>
               </Container>
             </Menu>
-          </Visibility>
-          <Vision
-          language= {this.state.languageIsDutch}
-          padding='20em 0em'
-            ref={section => {
-              this.visionRef = section;
-            }}
-          />
-          <Interest
-          language= {this.state.languageIsDutch}
-           padding='20em 0em'
-            ref={section => {
-              this.interestRef = section;
-            }}
-          />
-            <Analysis
-            language= {this.state.languageIsDutch}
-           padding='20em 0em'
-            ref={section => {
-              this.analysisRef = section;
-            }}
-          />
-          <Projects
-                        isMobile= {this.isMobile}
-          language= {this.state.languageIsDutch}
-           padding='20em 0em'
-           display="none"
-            ref={section => {
-              this.projectsRef = section;
-            }}
-          />
-          <Skills
-           language= {this.state.languageIsDutch}
-           padding='20em 0em'
-           columns={2}
-            ref={section => {
-              this.skillsRef = section;
-            }}
-          />
-          <Footer
-          language= {this.state.languageIsDutch}
-          padding='5em 0em' />
+            <div style={{paddingTop:"175px"}} className="content">
+            <Route exact path="/" component={DefaultRedirect} />
+          <Route path= "/home" component={Head}/>
+          <Route path= "/vision" component={Vision}/>
+          <Route path= "/belang" component={Interest}/>
+
+          </div>
+          </BrowserRouter>
         </>
       );
     }
