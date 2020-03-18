@@ -123,7 +123,7 @@ class App extends Component {
     } else {
       return (
         <>
-          <BrowserRouter>
+          <BrowserRouter basename={process.env.PUBLIC_URL}>>
             <Menu
               fixed={fixed ? "top" : "top"}
               // inverted={fixed ? !fixed : !fixed}
