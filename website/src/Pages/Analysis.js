@@ -8,7 +8,7 @@ class Analysis extends React.Component {
         <Grid container stackable verticalAlign="middle">
           <Grid.Row>
             <Header as="h3" style={{ fontSize: "2em", color: "midnightblue" }}>
-              Analysere kwaliteiten en tekorten
+             Kwaliteiten en tekorten
             </Header>
             <p>
               Om inzicht te krijgen in mijn kwaliteiten en tekorten gerelateerd
