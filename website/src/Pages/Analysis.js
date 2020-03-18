@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Grid, Header, Image, Segment } from "semantic-ui-react";
-import rug from "../assets/rug.jpg";
+import SWOT from "../UI/SWOT";
 class Analysis extends React.Component {
   render() {
     return (
@@ -21,9 +21,9 @@ class Analysis extends React.Component {
               kan ik mijn kwaliteiten in de zorg inzetten en ontwikkelen in mijn
               valkuilen.
             </p>
-            <Image bordered rounded size="large" src={rug} />
+<SWOT/>
             <p>
-              <br/>
+              <br />
               Naast het maken van een SWOT-analyse heb ik een leerstijlen test
               gedaan. Hieruit komt naar voren wat voor type ik ben en waar ik
               goed in ben. Uit deze test kwam naar voren dat ik een creatieve

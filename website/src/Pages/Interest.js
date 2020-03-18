@@ -11,8 +11,7 @@ class Interest extends React.Component {
                 as="h3"
                 style={{ fontSize: "2em", color: "midnightblue" }}
               >
-                Belang leven lang leren bij verpleegkundig leiderschap en
-                professioneel gedrag
+                Verpleegkundig belang
               </Header>
               <p>
                 Niet alleen de verpleegkundige in opleiding leren voor hun vak,
