@@ -36,10 +36,12 @@
 
 #mainImage {
   border-radius: 50%;
-  max-width: 85%;
+  max-width:90%;
   opacity: 0.9;
 }
-
+#imageContainer{
+  align-self: center !important;
+}
 #mainImageMobile {
   border-radius: 50%;
   max-width: 85%;

@@ -159,7 +159,7 @@ class App extends Component {
                 </Menu.Item>
               </Container>
             </Menu>
-            <div style={{ paddingTop: "175px" }} className="content">
+            <div style={{ paddingTop: "10em" }} className="content">
               <Route exact path="/" component={DefaultRedirect} />
               <Route path="/home" component={Head} />
               <Route path="/visie" component={Vision} />
