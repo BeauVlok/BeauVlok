@@ -161,8 +161,8 @@ class App extends Component {
             </Menu>
             <div style={{ paddingTop: "10em" }} className="content">
               <Route exact path="/" component={DefaultRedirect} />
-              <Route path="/home" component={Head} />
-              <Route path="/visie" component={Vision} />
+              <Route path={process.env.PUBLIC_URL +  "/home"} component={Head} />
+              <Route path={process.env.PUBLIC_URL + "/visie"} component={Vision} />
               <Route path="/belang" component={Interest} />
               <Route path="/analyse" component={Analysis} />
               <Route path="/activiteiten" component={Projects} />
