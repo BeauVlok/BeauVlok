@@ -1,84 +1,74 @@
-import React from 'react'
-import {
-    Button,
-    Grid,
-    Header,
-    Image,
-    Segment,
-  } from 'semantic-ui-react'
-  import rug from '../assets/rug.jpg';
-class Interest extends React.Component  {
-  
-    render(){
-      if(this.props.language){
-        return(
-<Segment style={{ padding: this.props.padding }} vertical>
-          <Grid   container stackable verticalAlign='middle'>
+import React from "react";
+import { Button, Grid, Header, Image, Segment } from "semantic-ui-react";
+import rug from "../assets/rug.jpg";
+class Interest extends React.Component {
+  render() {
+      return (
+        <Segment style={{ padding: this.props.padding }} vertical>
+          <Grid container stackable verticalAlign="middle">
             <Grid.Row>
-              <Grid.Column width={8}>
-                <Header as='h3' style={{ fontSize: '2em',color:"midnightblue"  }}>
-                  Belang van leven lang leren
-            </Header>
-                <p style={{ fontSize: '1.33em' }}>
-                  Ik ben een informatica student aan de Hogeschool Rotterdam. Ik heb een VWO diploma met het keuzevak informatica.
-            </p>
-            <p style={{ fontSize: '1.33em' }}>
-              Mijn passie ligt bij het maken van software oplossingen met nieuwe technologieën. Ik heb meerdere projecten ontwikkeld met C#, Python en Typescript,
-            </p>
-            <p style={{ fontSize: '1.33em' }}>
-              Ik werk momenteel bij LVP en CeVeDe, als fullstack en webshop developer. 
-              Daarnaast heb ik enkele jaren bij Dirk van den Broek gewerkt als teamleider.
-              Bij dit baantje heb ik meerdere skills geleerd zoals het commercieel neerzetten van een winkel,
-              werken in teamverband en aansturen van werknemers.
-            </p>
-            <p style={{ fontSize: '1.33em' }}>
-              Mijn grootste hobby is software maken, maar daarnaast vind ik het ook leuk om aan mijn Mazda Mx5 te sleutelen.
-                  </p>
-              </Grid.Column>
-              <Grid.Column floated='right' width={5}>
-                <Image bordered rounded size='large' src={rug} />
-              </Grid.Column>
+              <Header
+                as="h3"
+                style={{ fontSize: "2em", color: "midnightblue" }}
+              >
+                Belang leven lang leren bij verpleegkundig leiderschap en
+                professioneel gedrag
+              </Header>
+              <p>
+                Niet alleen de verpleegkundige in opleiding leren voor hun vak,
+                ook als je gediplomeerd bent als verpleegkundige betekent dit
+                blijven mee ontwikkelen in de nieuwe kennis van de
+                gezondheidszorg en dus blijven leren om deze kennis te
+                beheersen. Misschien nog wel belangrijker om juist te
+                ontwikkelen in het verpleegkundig beroep na het behalen van je
+                diploma!
+              </p>
+              <p>
+                erken in de zorg betekent op de hoogte zijn van de nieuwe kennis
+                en mee gaan in de ontwikkelingen om goede kwaliteit van zorg te
+                verlenen. De zorg is in een korte tijd veel verandert en naar
+                verwachting zal dit de komende jaren nog veel van toepassing
+                zijn. Een mooi voorbeeld van een verandering is; vroeger lag de
+                zorg bij de ziekte van een patiënt, nu ligt de zorg voornamelijk
+                bij het leren omgaan met de ziekte. Tijdens de opleiding wordt
+                er al veel aandacht besteedt aan persoonsgerichte zorg, namelijk
+                de zorg die is afgestemd op iemands leven, wensen en behoeften.
+                Hierbij speelt eigen regie een belangrijke rol in deze tijd en
+                de toekomst. De verpleegkundige gaat samen met de patiënt op
+                zoek naar de juiste zorg en ondersteuning (Kennisplein Zorg voor
+                Beter, 2020).
+              </p>
+              <Image bordered rounded size="large" src={rug} />
+              <p>
+                Dit betekent voor de verpleegkundige dat zij hun leven lang
+                zullen leren om deze zorg te kunnen leveren. Het vraagt van de
+                verpleegkundige om initiatief te nemen voor bijscholing,
+                klinische lessen, e-learnings en steeds op de hoogte zijn van
+                vernieuwde protocollen en richtlijnen. Daarnaast van belang om
+                geregistreerd te staan in de wet BIG en hiervoor dus het
+                initiatief moeten nemen om de handelingen weer te herhalen en
+                hiervoor te certificeren. Het doel van de wet BIG is om ervoor
+                te zorgen dat kwaliteit in de gezondheidszorg behouden wordt en
+                kwaliteit beter wordt. De wet BIG beschermt hierbij patiënten
+                (Ministerie van Volksgezondheid, Welzijn en Sport, 2020).
+              </p>
+              <p>
+                Het is belangrijk om als verpleegkundige bewust te zijn dat de
+                gezondheidszorg veel in beweging is en veel onderzoeken worden
+                uitgevoerd. Als taak van de verpleegkundige is om te willen
+                blijven ontwikkelen en te zoeken naar verbeterpunten in de zorg.
+                Bij het bovengenoemde speelt verpleegkundig leiderschap een
+                belangrijke rol, waar uiteindelijk de verpleegkundige zelf
+                initiatief in moet nemen. Wel is het belangrijk dat de
+                (regie)verpleegkundigen elkaar hierin stimuleren en ondersteunen
+                om dit te kunnen bereiken.
+              </p>
             </Grid.Row>
           </Grid>
         </Segment>
-        )
-}else{
-  return(
-    <Segment style={{ padding: this.props.padding }} vertical>
-              <Grid   container stackable verticalAlign='middle'>
-                <Grid.Row>
-                  <Grid.Column width={8}>
-                    <Header as='h3' style={{ fontSize: '2em', color:"midnightblue" }}>
-                Interest of learning a lifetime
-                </Header>
-                    <p style={{ fontSize: '1.33em' }}>
-                      I'm a computer science student at the Rotterdam University of Applied Sciences. I have a pre-university(vwo) degree with computer science as an optional subject.
-                </p>
-                <p style={{ fontSize: '1.33em' }}>
-                    My passion lies with creating software solutions with upcoming technologies. I created several projects with C#, Python and Typescript. 
-                </p>
-                <p style={{ fontSize: '1.33em' }}>
-                    I have a side job at Dirk van den Broek as a Team Leader. At this job I carry a lot of responsibility, 
-                    because I have to make sure that the store is commercially at its best. 
-                    During the day i work with multiple teams, which has boosted my sociality.   
-                    These skills are very useful for me and my future.
-                </p>
-                <p style={{ fontSize: '1.33em' }}>
-                      My biggest hobby is of course software development, but besides that I also like to maintain my Mazda Mx5 in the weekends. </p>
-                  </Grid.Column>
-                  <Grid.Column floated='right' width={5}>
-                    <Image bordered rounded size='large' src={rug} />
-                  </Grid.Column>
-                </Grid.Row>
-\
-              </Grid>
-            </Segment>
-            )
-}
-    
-
-    }
-
+      );
+   
+  }
 }
 
-export default Interest
+export default Interest;

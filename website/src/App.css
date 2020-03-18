@@ -119,8 +119,14 @@ a:hover{
      padding-right: 5%;
      font-size: 1em;
     }
+    li{
+        font-size: 0.77em;
+      }
   }
 
   p{
       font-size: 1.33em;
+  }
+  li{
+    font-size: 1em;
   }

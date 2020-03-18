@@ -17,9 +17,9 @@ import Projects from "./Pages/Projects";
 import HeadMobile from "./Heading/HeadMobile";
 import { FaLanguage } from "react-icons/fa";
 import Analysis from "./Pages/Analysis";
-import { Route, NavLink, BrowserRouter, Redirect } from "react-router-dom";
+import { Route, NavLink, HashRouter, Redirect } from "react-router-dom";
 import Literature from "./Pages/Literature";
-
+import Trends from "./Pages/Trends";
 class App extends Component {
   constructor(props) {
     super(props);
@@ -81,21 +81,24 @@ class App extends Component {
           </Segment>
 
           <Vision
-            language={this.state.languageIsDutch}
+            padding="5em 0em"
+            ref={section => {
+              this.visionRef = section;
+            }}
+          />
+          <Trends
             padding="5em 0em"
             ref={section => {
               this.visionRef = section;
             }}
           />
           <Interest
-            language={this.state.languageIsDutch}
             padding="5em 0em"
             ref={section => {
               this.interestRef = section;
             }}
           />
           <Analysis
-            language={this.state.languageIsDutch}
             padding="5em 0em"
             ref={section => {
               this.analysisRef = section;
@@ -103,27 +106,26 @@ class App extends Component {
           />
           <Projects
             isMobile={this.isMobile}
-            language={this.state.languageIsDutch}
             padding="5em 0em"
             ref={section => {
               this.projectsRef = section;
             }}
           />
           <Skills
-            language={this.state.languageIsDutch}
             padding="5em 0em"
             columns={1}
             ref={section => {
               this.skillsRef = section;
             }}
           />
-          <Footer language={this.state.languageIsDutch} padding="5em 0em" />
+          <Footer padding="5em 0em" />
         </>
       );
     } else {
       return (
         <>
-          <BrowserRouter basename={process.env.PUBLIC_URL}>>
+          <HashRouter>
+            >
             <Menu
               fixed={fixed ? "top" : "top"}
               // inverted={fixed ? !fixed : !fixed}
@@ -142,7 +144,10 @@ class App extends Component {
                     <NavLink to="/home">Home</NavLink>
                   </Menu.Item>
                   <Menu.Item as="a">
-                    <NavLink to="/visie">Persoonlijke visie</NavLink>
+                    <NavLink to="/visie">Visie</NavLink>
+                  </Menu.Item>
+                  <Menu.Item as="a">
+                    <NavLink to="/trends">Trends</NavLink>
                   </Menu.Item>
                   <Menu.Item as="a">
                     <NavLink to="/belang">Belang</NavLink>
@@ -159,16 +164,20 @@ class App extends Component {
                 </Menu.Item>
               </Container>
             </Menu>
-            <div style={{ paddingTop: "10em" }} className="content">
+            <div style={{ paddingTop: "10em", paddingBottom: "8em" }} className="content">
               <Route exact path="/" component={DefaultRedirect} />
-              <Route path={process.env.PUBLIC_URL +  "/home"} component={Head} />
-              <Route path={process.env.PUBLIC_URL + "/visie"} component={Vision} />
+              <Route path={process.env.PUBLIC_URL + "/home"} component={Head} />
+              <Route
+                path={process.env.PUBLIC_URL + "/visie"}
+                component={Vision}
+              />
+              <Route path="/trends" component={Trends} />
               <Route path="/belang" component={Interest} />
               <Route path="/analyse" component={Analysis} />
               <Route path="/activiteiten" component={Projects} />
               <Route path="/literatuur" component={Literature} />
             </div>
-          </BrowserRouter>
+          </HashRouter>
         </>
       );
     }
