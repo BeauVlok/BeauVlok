@@ -1,38 +1,12 @@
 import React from "react";
 import { Grid, Segment, Image, Header, Divider } from "semantic-ui-react";
-import webshop from "../assets/webshop.jpg";
-import AppImage from "../assets/App.png";
-import GameImage from "../assets/Game.png";
-import FaceImage from "../assets/face.jpg";
-import cevede from "../assets/cevede.png";
-import seatplan from "../assets/seatplan.jpg";
-import { FaArrowUp } from "react-icons/fa";
 import "./Projects.css";
 import Acute from "../Text/Acute";
 import Wound from "../Text/Wound";
 class Projects extends React.Component {
-  projectsEnum = {
-    python: 0,
-    face: 1,
-    app: 2,
-    webshop: 3,
-    seatplan: 4,
-    cevede: 5
-  };
-  constructor(props) {
-    super(props);
-    this.state = {
-      selectedPhoto: this.projectsEnum.acute,
-      userClicked: false
-    };
-  }
-
-  handleClick(photoId) {
-    this.setState({ selectedPhoto: photoId, userClicked: true });
-  }
 
   render() {
-    console.log(this.props.language);
+
     return (
       <Segment style={{ padding: this.props.padding }} vertical>
         <Grid container stackable verticalAlign="middle">
