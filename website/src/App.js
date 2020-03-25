@@ -139,7 +139,7 @@ class App extends Component {
                   <NavLink to="/activiteiten"><MenuItem>
                   Activiteiten
                   </MenuItem></NavLink>
-                  <NavLink to="/actliteratuur"><MenuItem>
+                  <NavLink to="/literatuur"><MenuItem>
                   Literatuur
                   </MenuItem></NavLink>
                 </MenuItem>
