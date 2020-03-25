@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "701ae6abd4719e9c2ada3535a497b341",
-    "url": "/static/media/outline-icons.701ae6ab.eot"
+    "revision": "ad97afd3337e8cda302d10ff5a4026b8",
+    "url": "/static/media/outline-icons.ad97afd3.ttf"
   },
   {
-    "revision": "ac31d829e88f95389c4e",
+    "revision": "2f7d6cd7ceccef149604",
     "url": "/static/css/main.4dea9139.chunk.css"
   },
   {
@@ -36,20 +36,20 @@ self.__precacheManifest = [
     "url": "/static/media/flags.9c74e172.png"
   },
   {
-    "revision": "ef60a4f6c25ef7f39f2d25a748dbecfe",
-    "url": "/static/media/outline-icons.ef60a4f6.woff"
-  },
-  {
     "revision": "cd6c777f1945164224dee082abaea03a",
     "url": "/static/media/outline-icons.cd6c777f.woff2"
   },
   {
-    "revision": "ad97afd3337e8cda302d10ff5a4026b8",
-    "url": "/static/media/outline-icons.ad97afd3.ttf"
+    "revision": "ef60a4f6c25ef7f39f2d25a748dbecfe",
+    "url": "/static/media/outline-icons.ef60a4f6.woff"
   },
   {
-    "revision": "ac31d829e88f95389c4e",
-    "url": "/static/js/main.9b036f49.chunk.js"
+    "revision": "701ae6abd4719e9c2ada3535a497b341",
+    "url": "/static/media/outline-icons.701ae6ab.eot"
+  },
+  {
+    "revision": "2f7d6cd7ceccef149604",
+    "url": "/static/js/main.d18f2c7f.chunk.js"
   },
   {
     "revision": "0ab54153eeeca0ce03978cc463b257f7",
@@ -72,12 +72,12 @@ self.__precacheManifest = [
     "url": "/static/media/icons.8e3c7f55.eot"
   },
   {
-    "revision": "b87b9ba532ace76ae9f6edfe9f72ded2",
-    "url": "/static/media/icons.b87b9ba5.ttf"
-  },
-  {
     "revision": "13db00b7a34fee4d819ab7f9838cc428",
     "url": "/static/media/brand-icons.13db00b7.eot"
+  },
+  {
+    "revision": "b87b9ba532ace76ae9f6edfe9f72ded2",
+    "url": "/static/media/icons.b87b9ba5.ttf"
   },
   {
     "revision": "c5ebe0b32dc1b5cc449a76c4204d13bb",
@@ -96,7 +96,7 @@ self.__precacheManifest = [
     "url": "/static/css/2.cd97f815.chunk.css"
   },
   {
-    "revision": "dc59bf57b9061bfbed471242109ac245",
+    "revision": "c4fc84c11324ede941617c04d3ffd60c",
     "url": "/index.html"
   }
 ];
