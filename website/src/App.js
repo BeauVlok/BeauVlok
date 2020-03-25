@@ -82,25 +82,25 @@ class App extends Component {
                 <h4>Beau Vlok</h4>
                 </Container>
               <MenuItem position="right">
-              <NavLink onTouchEnd={this.handleSidebarHide} to="/home"><MenuItem active={active}>
+              <NavLink  to="/home"><MenuItem active={active} onTouchEnd={this.handleSidebarHide}>
                    Home
                   </MenuItem></NavLink>
-                  <NavLink onTouchEnd={this.handleSidebarHide} to="/visie"><MenuItem>
+                  <NavLink  to="/visie"><MenuItem onTouchEnd={this.handleSidebarHide}>
                   Visie
                   </MenuItem></NavLink>
-                  <NavLink  onTouchEnd={this.handleSidebarHide} to="/trends"><MenuItem>
+                  <NavLink   to="/trends"><MenuItem onTouchEnd={this.handleSidebarHide}>
                   Trends
                   </MenuItem></NavLink>
-                  <NavLink  onTouchEnd={this.handleSidebarHide} to="/belang"><MenuItem>
+                  <NavLink   to="/belang"><MenuItem onTouchEnd={this.handleSidebarHide}>
                   Belang
                   </MenuItem></NavLink>
-                  <NavLink  onTouchEnd={this.handleSidebarHide}to="/analyse"><MenuItem>
+                  <NavLink to="/analyse"><MenuItem onTouchEnd={this.handleSidebarHide}>
                   Analyse
                   </MenuItem></NavLink>
-                  <NavLink  onTouchEnd={this.handleSidebarHide} to="/activiteiten"><MenuItem>
+                  <NavLink   to="/activiteiten"><MenuItem onTouchEnd={this.handleSidebarHide}>
                   Activiteiten
                   </MenuItem></NavLink>
-                  <NavLink  onTouchEnd={this.handleSidebarHide} to="/literatuur"><MenuItem>
+                  <NavLink   to="/literatuur"><MenuItem onTouchEnd={this.handleSidebarHide}>
                   Literatuur
                   </MenuItem></NavLink>
                 </MenuItem>
