@@ -82,25 +82,25 @@ class App extends Component {
                 <h4>Beau Vlok</h4>
                 </Container>
               <MenuItem position="right">
-              <NavLink to="/home"><MenuItem active={active}>
+              <NavLink onClick={this.handleSidebarHide} to="/home"><MenuItem active={active}>
                    Home
                   </MenuItem></NavLink>
-                  <NavLink to="/visie"><MenuItem>
+                  <NavLink  onClick={this.handleSidebarHide} to="/visie"><MenuItem>
                   Visie
                   </MenuItem></NavLink>
-                  <NavLink to="/trends"><MenuItem>
+                  <NavLink  onClick={this.handleSidebarHide} to="/trends"><MenuItem>
                   Trends
                   </MenuItem></NavLink>
-                  <NavLink to="/belang"><MenuItem>
+                  <NavLink  onClick={this.handleSidebarHide} to="/belang"><MenuItem>
                   Belang
                   </MenuItem></NavLink>
-                  <NavLink to="/analyse"><MenuItem>
+                  <NavLink  onClick={this.handleSidebarHide}to="/analyse"><MenuItem>
                   Analyse
                   </MenuItem></NavLink>
-                  <NavLink to="/activiteiten"><MenuItem>
+                  <NavLink  onClick={this.handleSidebarHide} to="/activiteiten"><MenuItem>
                   Activiteiten
                   </MenuItem></NavLink>
-                  <NavLink to="/literatuur"><MenuItem>
+                  <NavLink  onClick={this.handleSidebarHide} to="/literatuur"><MenuItem>
                   Literatuur
                   </MenuItem></NavLink>
                 </MenuItem>
