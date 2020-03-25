@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, Grid, Header, Image, Segment } from "semantic-ui-react";
 import SWOT from "../UI/SWOT";
+import swot from "../assets/swot.png";
 class Analysis extends React.Component {
   render() {
     return (
@@ -21,7 +22,8 @@ class Analysis extends React.Component {
               kan ik mijn kwaliteiten in de zorg inzetten en ontwikkelen in mijn
               valkuilen.
             </p>
-<SWOT/>
+{/* <SWOT/> */}
+<Image src={swot}/>
             <p>
               <br />
               Naast het maken van een SWOT-analyse heb ik een leerstijlen test
