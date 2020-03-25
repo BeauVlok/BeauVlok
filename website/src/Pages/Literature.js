@@ -13,17 +13,18 @@ class Literature extends React.Component {
   render() {
     return (
       <Segment style={{ padding: this.props.padding  }} vertical>
-        <Grid columns={2} textAlign='center'>
+        <Grid container stackable verticalAlign="middle">
           <GridRow>
             <GridColumn>
-              <Header as='h3' style={{ fontSize: '2em' }}>
-              <br/>
- Literatuur
-            </Header>
-
+            <Header
+                as="h3"
+                style={{ fontSize: "2em", color: "midnightblue" }}
+              >
+             Literatuur
+              </Header>
             </GridColumn>
           </GridRow>
-        </Grid>
+  
 
           <List>
     <List.Item>
@@ -100,7 +101,7 @@ class Literature extends React.Component {
       </List.Content>
     </List.Item>
   </List>
-
+  </Grid>
       </Segment>
     )
   }
