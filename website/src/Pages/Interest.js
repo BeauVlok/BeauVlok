@@ -21,6 +21,7 @@ class Interest extends React.Component {
                 beheersen. Misschien nog wel belangrijker om juist te
                 ontwikkelen in het verpleegkundig beroep na het behalen van je
                 diploma!
+                
               </p>
               <p>
                 erken in de zorg betekent op de hoogte zijn van de nieuwe kennis

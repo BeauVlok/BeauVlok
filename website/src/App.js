@@ -1,13 +1,7 @@
 import "./App.css";
 import React, { Component } from "react";
 import scrollToComponent from "react-scroll-to-component";
-import {
-  Container,
-  Menu,
-Dropdown,
-Image,
-MenuItem
-} from "semantic-ui-react";
+import { Container, Menu, Dropdown, Image, MenuItem,Sidebar, Icon } from "semantic-ui-react";
 import Vision from "./Pages/Vision";
 import Interest from "./Pages/Interest";
 import Head from "./Heading/Head";
@@ -58,39 +52,61 @@ class App extends Component {
     const Scroll = require("react-scroll");
     var scroll = Scroll.animateScroll;
     const { active } = this.state;
-    console.log(this.state.width)
-      return (
-        <>
-          <HashRouter>
-            >
-            {this.state.width < 600 ? 
-               <Menu  id="menu" fixed='top' inverted>
-               <Container>
-                 <MenuItem as='a' header>
-                   Lang leven leren
-                 </MenuItem>
-                 <MenuItem as='a'>Home</MenuItem>
-         
-                 <Dropdown item simple text='Dropdown'>
-                   <Dropdown.Menu>
-                     <Dropdown.Item>List Item</Dropdown.Item>
-                     <Dropdown.Item>List Item</Dropdown.Item>
-                     <Dropdown.Divider />
-                     <Dropdown.Header>Header Item</Dropdown.Header>
-                     <Dropdown.Item>
-                       <i className='dropdown icon' />
-                       <span className='text'>Submenu</span>
-                       <Dropdown.Menu>
-                         <Dropdown.Item>List Item</Dropdown.Item>
-                         <Dropdown.Item>List Item</Dropdown.Item>
-                       </Dropdown.Menu>
-                     </Dropdown.Item>
-                     <Dropdown.Item>List Item</Dropdown.Item>
-                   </Dropdown.Menu>
-                 </Dropdown>
-               </Container>
-             </Menu>
-             :
+    const { children } = this.props
+    const { sidebarOpened } = this.state
+    console.log(this.state.width);
+    return (
+      <>
+        <HashRouter>
+          
+          {this.state.width < 600 ? (
+            <>
+                        <Container id="header">
+              <Icon size="large" name="bars" onClick={this.handleToggle} / >
+              <div className="title">Leven Lang leren</div>
+            </Container>
+            <Sidebar
+            as={Menu}
+            animation='push'
+            inverted
+            onHide={this.handleSidebarHide}
+            vertical
+            visible={sidebarOpened}
+            id="menu"
+          >
+           
+              <Container>
+                <Container className="sideTitle">
+                <h2>Leven Lang Leren</h2>
+                <h4>Beau Vlok</h4>
+                </Container>
+              <MenuItem position="right">
+              <NavLink to="/home"><MenuItem active={active}>
+                   Home
+                  </MenuItem></NavLink>
+                  <NavLink to="/visie"><MenuItem>
+                  Visie
+                  </MenuItem></NavLink>
+                  <NavLink to="/trends"><MenuItem>
+                  Trends
+                  </MenuItem></NavLink>
+                  <NavLink to="/belang"><MenuItem>
+                  Belang
+                  </MenuItem></NavLink>
+                  <NavLink to="/analyse"><MenuItem>
+                  Analyse
+                  </MenuItem></NavLink>
+                  <NavLink to="/activiteiten"><MenuItem>
+                  Activiteiten
+                  </MenuItem></NavLink>
+                  <NavLink to="/literatuur"><MenuItem>
+                  Literatuur
+                  </MenuItem></NavLink>
+                </MenuItem>
+              </Container>
+            </Sidebar>
+            </>
+          ) : (
             <Menu
               fixed={fixed ? "top" : "top"}
               // inverted={fixed ? !fixed : !fixed}
@@ -105,48 +121,52 @@ class App extends Component {
               </div>
               <Container>
                 <MenuItem position="right">
-                  <MenuItem active={active}>
-                    <NavLink to="/home">Home</NavLink>
-                  </MenuItem>
-                  <MenuItem >
-                    <NavLink to="/visie">Visie</NavLink>
-                  </MenuItem>
-                  <MenuItem >
-                    <NavLink to="/trends">Trends</NavLink>
-                  </MenuItem>
-                  <MenuItem >
-                    <NavLink to="/belang">Belang</NavLink>
-                  </MenuItem>
-                  <MenuItem >
-                    <NavLink to="/analyse">Analyse</NavLink>
-                  </MenuItem>
-                  <MenuItem >
-                    <NavLink to="/activiteiten">Activiteiten</NavLink>
-                  </MenuItem>
-                  <MenuItem >
-                    <NavLink to="/literatuur">Literatuur</NavLink>
-                  </MenuItem>
+                <NavLink to="/home"><MenuItem active={active}>
+                   Home
+                  </MenuItem></NavLink>
+                  <NavLink to="/visie"><MenuItem>
+                  Visie
+                  </MenuItem></NavLink>
+                  <NavLink to="/trends"><MenuItem>
+                  Trends
+                  </MenuItem></NavLink>
+                  <NavLink to="/belang"><MenuItem>
+                  Belang
+                  </MenuItem></NavLink>
+                  <NavLink to="/analyse"><MenuItem>
+                  Analyse
+                  </MenuItem></NavLink>
+                  <NavLink to="/activiteiten"><MenuItem>
+                  Activiteiten
+                  </MenuItem></NavLink>
+                  <NavLink to="/actliteratuur"><MenuItem>
+                  Literatuur
+                  </MenuItem></NavLink>
                 </MenuItem>
+          
               </Container>
             </Menu>
+          )}
+          <div className="content">
+            <Route exact path="/" component={DefaultRedirect} />
+            <Route
+              path={process.env.PUBLIC_URL + "/home"}
+              component={this.state.width < 600 ? HeadMobile : Head}
+            />
+            <Route
+              path={process.env.PUBLIC_URL + "/visie"}
+              component={Vision}
+            />
+            <Route path="/trends" component={Trends} />
+            <Route path="/belang" component={Interest} />
+            <Route path="/analyse" component={Analysis} />
+            <Route path="/activiteiten" component={Projects} />
+            <Route path="/literatuur" component={Literature} />
+          </div>
+        </HashRouter>
+      </>
+    );
   }
-            <div className="content">
-              <Route exact path="/" component={DefaultRedirect} />
-              <Route path={process.env.PUBLIC_URL + "/home"} component= {this.state.width < 600 ? HeadMobile : Head}/>
-              <Route
-                path={process.env.PUBLIC_URL + "/visie"}
-                component={Vision}
-              />
-              <Route path="/trends" component={Trends} />
-              <Route path="/belang" component={Interest} />
-              <Route path="/analyse" component={Analysis} />
-              <Route path="/activiteiten" component={Projects} />
-              <Route path="/literatuur" component={Literature} />
-            </div>
-          </HashRouter>
-        </>
-      );
-    }
   //}
 }
 export default App;

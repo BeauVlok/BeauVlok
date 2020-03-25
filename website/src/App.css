@@ -66,6 +66,7 @@ a :visited{
 a:hover{
     color: midnightblue !important;
 }
+a{ color: midnightblue !important;}
 @media only screen and (max-width: 600px) {
     p {
      padding-left: 5%;
@@ -78,6 +79,45 @@ a:hover{
       .content{
 
         padding-top: 50px;
+    }
+    .title{    color: midnightblue !important;
+                font-size: 2em ;
+                font-family: palatino linotype,serif !important;
+    }
+    h3{padding-left: 0.5em !important;}
+    #header{
+        padding: 0.75em;
+        background-color: pink;
+        display: flex;
+        flex-direction: row;
+        margin: 0 !important;
+    }
+    .sideTitle{
+        color: midnightblue;
+    }
+    .h4{
+        margin: 0!important;
+    }
+    .h2{
+        margin: 0!important;
+    }
+    .description{
+        white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    /* word-wrap: break-word; */
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
     }
   }
 
