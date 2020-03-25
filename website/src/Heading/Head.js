@@ -6,15 +6,15 @@ class Head extends React.Component {
   render() {
     return (
       <>
-        <div class="main" style={{ minHeight: "70vh" }}>
+        <div className="main" style={{ minHeight: "70vh" }}>
           <Grid centered id="grid" columns={5}>
             <Grid.Row>
               <Grid.Column id="imageContainer" width={5}>
                 <Image id="mainImage" src={beau} />
               </Grid.Column>
               <Grid.Column width={8}>
-                <div id="maincard" centered>
-                  <h1 class="mainTitle">
+                <div id="maincard" >
+                  <h1 className="mainTitle">
                     {" "}
                     Ervaren. Empathisch. <br />
                     Toekomstig Verpleegkundige.
