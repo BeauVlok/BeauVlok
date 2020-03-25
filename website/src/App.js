@@ -6,6 +6,7 @@ import Vision from "./Pages/Vision";
 import Interest from "./Pages/Interest";
 import Head from "./Heading/Head";
 import Projects from "./Pages/Projects";
+import ProjectsMobile from "./Pages/ProjectsMobile";
 import HeadMobile from "./Heading/HeadMobile";
 import Analysis from "./Pages/Analysis";
 import { Route, NavLink, HashRouter, Redirect } from "react-router-dom";
@@ -63,7 +64,7 @@ class App extends Component {
             <>
                         <Container id="header">
               <Icon size="large" name="bars" onClick={this.handleToggle} / >
-              <div className="title">Leven Lang leren</div>
+              <NavLink to="/home"> <div className="title">Leven Lang leren</div></NavLink>
             </Container>
             <Sidebar
             as={Menu}
@@ -160,7 +161,7 @@ class App extends Component {
             <Route path="/trends" component={Trends} />
             <Route path="/belang" component={Interest} />
             <Route path="/analyse" component={Analysis} />
-            <Route path="/activiteiten" component={Projects} />
+            <Route path="/activiteiten" component={this.state.width < 600 ? ProjectsMobile : Projects} />
             <Route path="/literatuur" component={Literature} />
           </div>
         </HashRouter>
