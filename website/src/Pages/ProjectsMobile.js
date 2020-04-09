@@ -3,6 +3,7 @@ import { Grid, Segment,  Header, Divider } from "semantic-ui-react";
 import "./Projects.css";
 import AcuteMobile from "../Text/AcuteMobile";
 import WoundMobile from "../Text/WoundMobile";
+import ExternMobile from "../Text/ExternMobile";
 class Projects extends React.Component {
 
   render() {
@@ -31,6 +32,8 @@ class Projects extends React.Component {
             <AcuteMobile />
             <Divider />
             <WoundMobile />
+            <Divider/>
+            <ExternMobile/>
           </Grid.Row>
         </Grid>
       </Segment>
