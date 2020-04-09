@@ -1,7 +1,6 @@
 import "./App.css";
 import React, { Component } from "react";
-import scrollToComponent from "react-scroll-to-component";
-import { Container, Menu, Dropdown, Image, MenuItem,Sidebar, Icon } from "semantic-ui-react";
+import { Container, Menu, MenuItem,Sidebar, Icon } from "semantic-ui-react";
 import Vision from "./Pages/Vision";
 import Interest from "./Pages/Interest";
 import Head from "./Heading/Head";
@@ -51,10 +50,7 @@ class App extends Component {
   render() {
     const DefaultRedirect = () => <Redirect to="/home" />;
     const { fixed } = this.state;
-    const Scroll = require("react-scroll");
-    var scroll = Scroll.animateScroll;
     const { active } = this.state;
-    const { children } = this.props
     const { sidebarOpened } = this.state
     console.log(this.state.width);
     return (

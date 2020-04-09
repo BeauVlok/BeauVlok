@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Segment, Image, Header, Divider } from "semantic-ui-react";
+import { Grid, Segment,  Header, Divider } from "semantic-ui-react";
 import "./Projects.css";
 import AcuteMobile from "../Text/AcuteMobile";
 import WoundMobile from "../Text/WoundMobile";

@@ -1,6 +1,5 @@
 import React from "react";
-import beau from "../assets/beau.jpg";
-import { Image, Grid, Header } from "semantic-ui-react";
+import { Grid, Header } from "semantic-ui-react";
 class SWOT extends React.Component {
   render() {
     return (

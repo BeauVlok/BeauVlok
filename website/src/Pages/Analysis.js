@@ -1,6 +1,5 @@
 import React from "react";
-import { Button, Grid, Header, Image, Segment } from "semantic-ui-react";
-import SWOT from "../UI/SWOT";
+import {  Grid, Header, Image, Segment } from "semantic-ui-react";
 import swot from "../assets/swot.png";
 class Analysis extends React.Component {
   render() {

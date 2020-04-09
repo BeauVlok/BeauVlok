@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, Grid, Image, Segment } from "semantic-ui-react";
+import { Header, Grid, Image,} from "semantic-ui-react";
 import wound from "../assets/wondzorg.jpg";
 class Wound extends React.Component {
   render() {

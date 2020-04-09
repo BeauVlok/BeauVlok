@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, Grid, Image, Segment } from "semantic-ui-react";
+import { Header,  Image, } from "semantic-ui-react";
 import seh from "../assets/SEH.jpg";
 class AcuteMobile extends React.Component {
   render() {

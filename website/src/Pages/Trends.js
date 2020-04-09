@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Grid, Header, Image, Segment } from "semantic-ui-react";
+import {  Grid, Header, Image, Segment } from "semantic-ui-react";
 import trends from "../assets/trends.jpg";
 class Trends extends React.Component {
   render() {
