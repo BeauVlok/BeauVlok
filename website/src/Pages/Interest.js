@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Grid, Header, Image, Segment } from "semantic-ui-react";
-import rug from "../assets/rug.jpg";
+import interest from "../assets/belang.jpg";
 class Interest extends React.Component {
   render() {
       return (
@@ -38,8 +38,9 @@ class Interest extends React.Component {
                 zoek naar de juiste zorg en ondersteuning (Kennisplein Zorg voor
                 Beter, 2020).
               </p>
-              <Image bordered rounded size="large" src={rug} />
+              <Image centered bordered rounded style={{width: "50%"}} src={interest} />
               <p>
+                <br/>
                 Dit betekent voor de verpleegkundige dat zij hun leven lang
                 zullen leren om deze zorg te kunnen leveren. Het vraagt van de
                 verpleegkundige om initiatief te nemen voor bijscholing,

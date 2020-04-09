@@ -1,6 +1,6 @@
 import React from "react";
 import { Header, Grid, Image, Segment } from "semantic-ui-react";
-import rug from "../assets/rug.jpg";
+import seh from "../assets/SEH.jpg";
 class AcuteMobile extends React.Component {
   render() {
     return (
@@ -8,7 +8,7 @@ class AcuteMobile extends React.Component {
         <Header as="h3" style={{ fontSize: "2em", color: "midnightblue" }}>
           Acute zorg
         </Header>
-        <Image bordered rounded size="large" src={rug} />
+        <Image bordered rounded size="large" src={seh} />
 
         <p>
           De keuze voor de workshop acute zorg komt voort uit mijn toekomst

@@ -1,6 +1,6 @@
 import React from "react";
 import { Header, Grid, Image, Segment } from "semantic-ui-react";
-import rug from "../assets/rug.jpg";
+import wound from "../assets/wondzorg.jpg";
 class WoundMobile extends React.Component {
   render() {
     return (
@@ -10,7 +10,7 @@ class WoundMobile extends React.Component {
             Wondzorg
           </Header>
 
-              <Image bordered rounded size="large" src={rug} />
+              <Image bordered rounded size="large" src={wound} />
 
               <p>
                 De keuze voor deze workshop komt voort, omdat ik de zorg rondom

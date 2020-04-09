@@ -1,6 +1,6 @@
 import React from "react";
 import { Header, Grid, Image, Segment } from "semantic-ui-react";
-import rug from "../assets/rug.jpg";
+import wound from "../assets/wondzorg.jpg";
 class Wound extends React.Component {
   render() {
     return (
@@ -11,7 +11,7 @@ class Wound extends React.Component {
           </Header>
           <Grid.Row columns={6}>
             <Grid.Column width={6}>
-              <Image bordered rounded size="large" src={rug} />
+              <Image bordered rounded size="large" style={{height: "393px"}} src={wound} />
             </Grid.Column>
             <Grid.Column width={10}>
               <p>
