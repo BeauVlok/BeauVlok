@@ -38,7 +38,7 @@ class Interest extends React.Component {
                 zoek naar de juiste zorg en ondersteuning (Kennisplein Zorg voor
                 Beter, 2020).
               </p>
-              <Image centered bordered rounded style={{width: "50%"}} src={interest} />
+              <Image centered bordered rounded size="huge" src={interest} />
               <p>
                 <br/>
                 Dit betekent voor de verpleegkundige dat zij hun leven lang

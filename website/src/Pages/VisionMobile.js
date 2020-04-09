@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, Grid, Header, Image, Segment } from "semantic-ui-react";
 import visie from "../assets/visie.png";
-class Vision extends React.Component {
+class VisionMobile extends React.Component {
   render() {
     return (
       <Segment style={{ padding: this.props.padding }} vertical>
@@ -13,9 +13,6 @@ class Vision extends React.Component {
               >
                 Persoonlijke visie
               </Header>
-              <Grid  style={{ minHeight: "30vh" }}>
-              <Grid.Row columns={10}>
-          <Grid.Column width={10}>
               <p>
                 In 2021 hoop ik HBO-verpleegkundige te zijn, tegenwoordig ook
                 wel de functie regieverpleegkundige genoemd. Maar wat houdt dit
@@ -50,12 +47,7 @@ class Vision extends React.Component {
                 ontwikkelen in de gezondheidszorg en dit te delen met collega’s
                 en te integreren op de afdeling.
               </p>
-              </Grid.Column>
-          <Grid.Column width={6}>
               <Image bordered rounded size="large" centered src={visie} />
-              </Grid.Column>
-              </Grid.Row>
-              </Grid>
               <p>
                 <br/>
                 Wat ik belangrijk vind in de zorg zijn de ontwikkelingen en
@@ -102,4 +94,4 @@ class Vision extends React.Component {
   }
 }
 
-export default Vision;
+export default VisionMobile;

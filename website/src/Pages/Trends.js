@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Grid, Header, Image, Segment } from "semantic-ui-react";
-import rug from "../assets/rug.jpg";
+import trends from "../assets/trends.jpg";
 class Trends extends React.Component {
   render() {
     return (
@@ -48,7 +48,7 @@ class Trends extends React.Component {
               de digitalisering, maar zeer voor verpleegkundige en patiënten
               essentieel om hierin mee te ontwikkelen (Volksgezondheid, 2018).
             </p>
-            <Image bordered rounded size="large" src={rug} />
+            <Image bordered rounded size="huge" centered src={trends} />
 
             <p>
               <br />

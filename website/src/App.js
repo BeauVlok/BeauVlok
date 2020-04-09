@@ -12,6 +12,7 @@ import Analysis from "./Pages/Analysis";
 import { Route, NavLink, HashRouter, Redirect } from "react-router-dom";
 import Literature from "./Pages/Literature";
 import Trends from "./Pages/Trends";
+import VisionMobile from "./Pages/VisionMobile";
 
 class App extends Component {
   constructor(props) {
@@ -156,7 +157,7 @@ class App extends Component {
             />
             <Route
               path={process.env.PUBLIC_URL + "/visie"}
-              component={Vision}
+              component={this.state.width < 600 ? VisionMobile : Vision}
             />
             <Route path="/trends" component={Trends} />
             <Route path="/belang" component={Interest} />
