@@ -12,15 +12,14 @@ class Trends extends React.Component {
             </Header>
             <p>
               Binnen de gezondheidszorg zijn de laatste jaren veel
-              ontwikkelingen, waar wij als verpleegkundige maar daarnaast
-              patiënten ook veel mee te maken hebben. Een aantal van deze
+              ontwikkelingen, waar wij als verpleegkundige én patiënten veel mee te maken hebben. Een aantal van deze
               ontwikkelingen zal ik hieronder beschrijven welke een invloed
               hebben nu tijdens mijn ontwikkeling, maar ook later in mijn
               toekomstige vakgebied naar de ontwikkeling op de SEH en medisch
               mobiel trauma team.
             </p>
             <p>
-              De grootste ontwikkeling in de zorg voor de komende jaren is de
+              Een van de grootste ontwikkelingen in de zorg voor de komende jaren is de
               vergrijzing. Er is een toename van ouderen welke zorg nodig
               hebben. Hierbij komen ook steeds meer tegelijk aandoeningen bij
               kijken, comorbiditeit genoemd. Wat hierbij vooral verandert is
@@ -30,7 +29,7 @@ class Trends extends React.Component {
               Deze ontwikkeling zal ook de acute zorg benaderen, mensen worden
               ouder, vallen en leven langer met een ziektebeeld. Hierdoor is een
               opname via de SEH, niet meer weg te denken. Belangrijk om hierin
-              te ontwikkelen en mee te gaan met de vergrijzing.
+              te ontwikkelen en mee te gaan met de vergrijzing als verpleegkundigen.
             </p>
             <p>
               Een ander niet te missen ontwikkeling is de toenemende
@@ -45,7 +44,7 @@ class Trends extends React.Component {
               leidt tot meer producten op maat. Ook virtual reality komt steeds
               meer terug in de gezondheidzorg om zorgprofessionals te trainen in
               nagemaakte zorgsettingen. Dit zijn maar een aantal voorbeelden van
-              de digitalisering, maar zeer voor verpleegkundige en patiënten
+              de digitalisering, maar voor verpleegkundigen en patiënten
               essentieel om hierin mee te ontwikkelen (Volksgezondheid, 2018).
             </p>
             <Image bordered rounded size="huge" centered src={trends} />
@@ -61,22 +60,23 @@ class Trends extends React.Component {
               Welzijn en Sport, 2020).
             </p>
             <p>
-              De wet BIG-II zal ons als verpleegkundige (in opleiding) niet
+              De wet BIG-II zal ons als verpleegkundigen (in opleiding) niet
               ontgaan zijn. Het onderscheid tussen hbo en mbo opgeleide
-              verpleegkundige, waarbij de hbo verpleegkundige de functie als
+              verpleegkundigen, waarbij de hbo verpleegkundigen de functie als
               regieverpleegkundige krijgen. Hierbij horen naast je
               verpleegkundige functies nieuwe functies als het indiceren en
               organiseren van zorg, klinisch redeneren in complexe situatie en
               het toepassen van EBP. Met dit nieuwe wetvoorstel in 2019, is veel
-              ophef geweest van de verpleegkundige welke dezen taken al jaren
+              ophef geweest van de verpleegkundigen welke deze taken al jaren
               uitvoert en dat dadelijk ineens niet meer mogen doen. Naar
               verwachting zal er in 2020 een voorstel gedaan worden hoe de
               Nederlandse gezondheidszorg dit wil aanpakken (Kennisplein Zorg
               voor Beter, 2019) & (Han university of applied sciences, 2019).
             </p>
+            <p style={{fontWeight: "bold", margin: "0"}}>Persoonlijke visie in relatie tot de ontwikkelingen en trends: </p>
             <p>
-              Persoonlijke visie met de ontwikkelingen en trends: <br />
-              Ik vind het erg belangrijk dat ik, maar alle verpleegkundige, mee
+              
+              Ik vind het erg belangrijk dat niet alleen ik, maar alle verpleegkundigen, mee
               ontwikkelen in de zorg. De vergrijzing is een feit waar iedereen
               in de zorg mee te maken gaat krijgen. Zowel revalidatie,
               verzorgingshuizen als ziekenhuizen en ook de acute zorg waar mijn

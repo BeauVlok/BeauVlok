@@ -17,7 +17,7 @@ class Vision extends React.Component {
               <Grid.Row columns={10}>
           <Grid.Column width={10}>
               <p>
-                In 2021 hoop ik HBO-verpleegkundige te zijn, tegenwoordig ook
+                In 2021 hoop ik hbo-verpleegkundige te zijn, tegenwoordig ook
                 wel de functie regieverpleegkundige genoemd. Maar wat houdt dit
                 voor mij precies in? En hoe ontwikkel ik mijn eigen visie en
                 verpleegkundig leiderschap?
@@ -34,9 +34,7 @@ class Vision extends React.Component {
               <p>
                 Begin van dit studiejaar werd mij gevraagd hoe ik verpleegkundig
                 leiderschap toon in de praktijk? Voor mij een begrip wat ik vaak
-                heb gehoord, maar nog nooit bij stilgestaan heb over wat ik
-                belangrijk vind in de zorgverlening en hoe ik dit wil tonen als
-                verpleegkundige. Tot dit schooljaar, de laatste maanden heb ik
+                heb gehoord, maar nog nooit bij stil heb gestaan. Tot dit schooljaar, de laatste maanden heb ik
                 mij hierin verdiept en een eigen mening gevormd. In bachelor
                 2020 wordt verpleegkundig leiderschap omschreven als ‘’het
                 initiatief nemen in het uitvoeren van regie over het eigen
@@ -64,13 +62,13 @@ class Vision extends React.Component {
                 er andere manieren om de zorg te leveren? Ik vind het erg
                 belangrijk dat alle verpleegkundigen kritische vragen blijven
                 stellen over het (eigen) handelen en hierdoor dus een leven lang
-                leren door steeds te onderzoeken doen wij inderdaad wat goed is,
-                waar is dit op gebaseerd én kan het beter? Het is ontzettend
+                leren door steeds te onderzoeken; doen wij inderdaad wat goed is?
+                Waar is dit op gebaseerd? Én kan het beter? Het is ontzettend
                 belangrijk om dit altijd af te vragen en om te blijven
                 leren/ontwikkelen om de beste kwaliteit van zorg te kunnen
                 leveren voor de patiënt, hierbij wil ik bereiken dat er niet
                 geroepen wordt ‘’zo doen wij het al jaren’’, dus het is goed...
-                Hierbij wil ik als HBO-verpleegkundige mijn verantwoording in
+                Hierbij wil ik als hbo-verpleegkundige mijn verantwoording in
                 nemen en mijn verpleegkundig leiderschap tonen om samen met de
                 collega’s mee te ontwikkelen in de tijd en de beste kwaliteit
                 van zorg te leveren, zonder dat wij roepen ‘’zo doen wij het al
@@ -80,19 +78,18 @@ class Vision extends React.Component {
                 Sinds mijn kinderjaren roep ik dat ik verpleegkundige op de SEH
                 wil worden, dit is altijd nog een doel die ik graag wil
                 bereiken, maar mijn droombaan en doel is om te werken in een
-                mobiel medisch trauma team. De acute zorg trekt mij zo aan,
+                mobiel medisch trauma team. De acute zorg trekt mij aan,
                 omdat ik afwisseling, uitdaging, spanning en snel handelen
                 ontzettend leuk en interessant vind om toe te passen in de zorg.
-                Dit is ook reden geweest om te starten aan de HBO-V en
+                Dit is ook reden geweest om te starten aan de hbo-v en
                 uiteindelijk door te stromen naar de SEH en vanuit hier naar een
                 mobiel medisch traumateam. Ook in de acute zorg is het hebben
                 van een eigen visie erg belangrijk en zeker het tonen van
-                verpleegkundig leiderschap zoals ik hierboven heb beschreven wat
-                ik belangrijk vind. In de acute zorg verandert de zorg ook veel
-                en zijn er ook veel ontwikkelingen Ook hier is het mijn taak om
+                verpleegkundig leiderschap zoals ik hierboven heb beschreven. In de acute zorg verandert de zorg ook veel
+                en zijn er ook veel ontwikkelingen. Ook hier is het mijn taak om
                 een leven lang te leren en mee te ontwikkelen. Hierbij wil ik
                 mijn verpleegkundig leiderschap zoals hierboven beschreven
-                meenemen in mijn toekomstig vakgebied.
+                meenemen in mijn toekomstige vakgebied.
               </p>
          
           </Grid.Row>

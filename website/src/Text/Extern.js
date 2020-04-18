@@ -24,7 +24,7 @@ class Extern extends React.Component {
                 Voor deze externe activiteit heb ik gekozen, omdat ik veel
                 interesse heb in de acute zorg en hier mijn droombaan ligt.
                 Momenteel loop ik stage 3.2 op de kinderchirurgie 1-Zuid en vind
-                ik de zorg rondom kinderen ook erg interessant. Het Sophia bood
+                ik de zorg rondom kinderen erg interessant. Het Sophia boodt
                 mij deze e-learning aan en ik vond het erg interessant om te
                 leren hoe ik de ABCDE-methodiek bij kinderen kan toepassen en
                 dit ook kan meenemen in mijn loopbaan naar de acute zorg. Ook op
@@ -38,9 +38,9 @@ class Extern extends React.Component {
             <Grid.Row></Grid.Row>
             <p>
               <br />
-              Ik vond de e-learning erg interessant om te maken en ik heb ook
+              Ik vond de E-learning erg interessant om te maken en ik heb ook
               een aantal belangrijke verschillen geleerd vergeleken met het
-              toepassen van de ABCDE-methodiek bij volwassenen. De e-learning
+              toepassen van de ABCDE-methodiek bij volwassenen. De E-learning
               ging alle stappen van de ABCDE-methodiek bij kinderen door en ik
               heb voornamelijk geleerd dat je bij het toepassen van de
               ABCDE-methodiek de volgende punten langsgaat tijdens de

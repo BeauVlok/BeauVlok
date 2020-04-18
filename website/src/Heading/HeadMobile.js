@@ -47,8 +47,8 @@ class HeadMobile extends React.Component {
                     Op deze website is mijn visie beschreven in relatie tot een
                     leven lang leren. Bij het ontwikkelen van mijn visie, heb ik
                     onderzocht wat verpleegkundig leiderschap is en wat dit voor
-                    mij inhoudt. Heb ik kwaliteiten en tekorten in relatie met
-                    mijn toekomstgebied meegenomen. Als laatste heb ik
+                    mij inhoud. Hierbij heb ik mijn kwaliteiten en tekorten in relatie met
+                    mijn toekomstige vakgebied meegenomen. Als laatste heb ik
                     beschreven welke workshops en activiteiten ik heb gevolgd en
                     welke bijdrage deze hebben gehad om mijn visie te kunnen
                     formuleren.{" "}

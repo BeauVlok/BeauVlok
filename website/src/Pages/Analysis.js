@@ -44,11 +44,11 @@ class Analysis extends React.Component {
               <li>Originele ideeën, welke een ander nog niet bedacht heeft.</li>
             </ul>
             <p>
-              Als ik naar deze uitslag kijk, ben ik het er mee eens. Ik houdt
+              Als ik naar deze uitslag kijk, ben ik het er mee eens. Ik houd
               graag van dingen doen en creatief na te denken hoe ik bepaalde
               dingen kan aanpakken. Ik vind het erg belangrijk dat er
               duidelijkheid is in wat ik doe en hoe ik dit terug kan koppelen
-              aan de theorie die er op school uitgelegd is. valkuil hierin voor
+              aan de theorie die er op school uitgelegd is. Valkuil hierin voor
               mij is wel dat er te veel gefantaseerd wordt en dat ik te groot ga
               nadenken over de oplossing.
             </p>
@@ -64,7 +64,7 @@ class Analysis extends React.Component {
               mij ook valkuilen aanwezig in relatie tot mijn toekomstige
               vakgebied. Een valkuil is het delegeren van taken, het liefst los
               ik alles zelf op, maar op de acute zorg ben je een team en moet je
-              ook taken delegeren aan andere. Het aangeven van mijn grenzen kan
+              ook taken delegeren aan anderen. Het aangeven van mijn grenzen kan
               ik nu nog lastig vinden, op de acute zorg is dit wel erg
               belangrijk. Dit zijn twee punten waar ik persoonlijk nog in kan
               groeien en ontwikkelen en dit wil ik ook zeker doen om een goede

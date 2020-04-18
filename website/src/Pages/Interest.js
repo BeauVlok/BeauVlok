@@ -14,7 +14,7 @@ class Interest extends React.Component {
                 Verpleegkundig belang
               </Header>
               <p>
-                Niet alleen de verpleegkundige in opleiding leren voor hun vak,
+                Niet alleen de verpleegkundigen in opleiding leren voor hun vak,
                 ook als je gediplomeerd bent als verpleegkundige betekent dit
                 blijven mee ontwikkelen in de nieuwe kennis van de
                 gezondheidszorg en dus blijven leren om deze kennis te
@@ -24,7 +24,7 @@ class Interest extends React.Component {
                 
               </p>
               <p>
-                erken in de zorg betekent op de hoogte zijn van de nieuwe kennis
+                Werken in de zorg betekent op de hoogte zijn van de nieuwe kennis
                 en mee gaan in de ontwikkelingen om goede kwaliteit van zorg te
                 verlenen. De zorg is in een korte tijd veel verandert en naar
                 verwachting zal dit de komende jaren nog veel van toepassing
@@ -41,9 +41,9 @@ class Interest extends React.Component {
               <Image centered bordered rounded size="huge" src={interest} />
               <p>
                 <br/>
-                Dit betekent voor de verpleegkundige dat zij hun leven lang
+                Dit betekent voor de verpleegkundigen dat zij hun leven lang
                 zullen leren om deze zorg te kunnen leveren. Het vraagt van de
-                verpleegkundige om initiatief te nemen voor bijscholing,
+                verpleegkundigen om initiatief te nemen voor bijscholing,
                 klinische lessen, e-learnings en steeds op de hoogte zijn van
                 vernieuwde protocollen en richtlijnen. Daarnaast van belang om
                 geregistreerd te staan in de wet BIG en hiervoor dus het
@@ -54,7 +54,7 @@ class Interest extends React.Component {
                 (Ministerie van Volksgezondheid, Welzijn en Sport, 2020).
               </p>
               <p>
-                Het is belangrijk om als verpleegkundige bewust te zijn dat de
+                Het is belangrijk om als verpleegkundigen bewust te zijn dat de
                 gezondheidszorg veel in beweging is en veel onderzoeken worden
                 uitgevoerd. Als taak van de verpleegkundige is om te willen
                 blijven ontwikkelen en te zoeken naar verbeterpunten in de zorg.

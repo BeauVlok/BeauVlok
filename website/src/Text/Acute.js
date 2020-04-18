@@ -19,7 +19,7 @@ class Acute extends React.Component {
       <Grid.Column width={10}>
         <p>
           De keuze voor de workshop acute zorg komt voort uit mijn toekomst
-          doel, namelijk verpleegkundig specialist op de SEH en uiteindelijk in
+          doel, namelijk verpleegkundige op de SEH en uiteindelijk in
           een medisch mobiel traumateam. Deze droom roep ik al sinds mijn
           kinderjaren en wil ik nog steeds erg graag bereiken in de komende
           jaren. Omdat ik nog weinig kennis heb gehad over de acute zorg, was ik
@@ -32,10 +32,10 @@ class Acute extends React.Component {
           opleiding) met hun mee te ontwikkelen en dus eigenlijk nu al te
           beginnen met een leven lang leren. Ook uit de SWOT-analyse komt naar
           voren dat ik kwaliteiten heb als het zoeken van uitdaging en overzicht
-          behoud het zoeken van creativiteit. Dit zijn drie eigenschappen die ik
+          behoud bij het zoeken van creativiteit. Dit zijn drie eigenschappen die ik
           kan inzetten in de acute zorg en welke naar mijn mening ook belangrijk
           zijn. Hierdoor ben ik erg enthousiast geworden om meer te weten over
-          de acute zorg en de rol van de verpleegkundige hierin.{" "}
+          de acute zorg en de rol van de verpleegkundigen hierin.{" "}
     
         </p>
         </Grid.Column>
@@ -53,7 +53,7 @@ class Acute extends React.Component {
           ontwikkelen om naar een arts toe te stappen en mijn (klinische) kennis
           en ervaring te delen en hierbij zelfvertrouwen uit te stralen. Ook heb
           ik veel kunnen oefenen met de ABCDE-methodiek, wat ik erg interessant
-          vind om toe te passen op casussen. Het werken met de ABCDE is nog iets
+          vind om toe te passen op casussen. Het werken met de ABCDE-methodiek is nog iets
           waar ik veel in kan ontwikkelen, maar de kennis die ik nu heb opgedaan
           kan ik zeker meenemen in mijn stages in het ziekenhuis.{" "}
         </p>
