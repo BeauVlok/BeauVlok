@@ -43,6 +43,7 @@ class Analysis extends React.Component {
               <li>Duidelijkheid is essentieel voor een creatieve leerstijl</li>
               <li>Originele ideeën, welke een ander nog niet bedacht heeft.</li>
             </ul>
+            
             <p>
               Als ik naar deze uitslag kijk, ben ik het er mee eens. Ik houd
               graag van dingen doen en creatief na te denken hoe ik bepaalde
