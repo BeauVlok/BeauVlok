@@ -12,7 +12,7 @@ import { Route, NavLink, HashRouter, Redirect } from "react-router-dom";
 import Literature from "./Pages/Literature";
 import Trends from "./Pages/Trends";
 import VisionMobile from "./Pages/VisionMobile";
-
+import ScrollToTop from './UI/ScrollToTop';
 class App extends Component {
   constructor(props) {
     super(props);
@@ -52,10 +52,10 @@ class App extends Component {
     const { fixed } = this.state;
     const { active } = this.state;
     const { sidebarOpened } = this.state
-    console.log(this.state.width);
     return (
       <>
         <HashRouter>
+          <ScrollToTop>
           
           {this.state.width < 600 ? (
             <>
@@ -161,6 +161,7 @@ class App extends Component {
             <Route path="/activiteiten" component={this.state.width < 600 ? ProjectsMobile : Projects} />
             <Route path="/literatuur" component={Literature} />
           </div>
+          </ScrollToTop>
         </HashRouter>
       </>
     );
