@@ -1,5 +1,5 @@
 import React from "react";
-import {  Grid, Header, Image, Segment } from "semantic-ui-react";
+import { Grid, Header, Image, Segment } from "semantic-ui-react";
 import trends from "../assets/trends.jpg";
 class Trends extends React.Component {
   render() {
@@ -12,24 +12,25 @@ class Trends extends React.Component {
             </Header>
             <p>
               Binnen de gezondheidszorg zijn de laatste jaren veel
-              ontwikkelingen, waar wij als verpleegkundige én patiënten veel mee te maken hebben. Een aantal van deze
-              ontwikkelingen zal ik hieronder beschrijven welke een invloed
-              hebben nu tijdens mijn ontwikkeling, maar ook later in mijn
-              toekomstige vakgebied naar de ontwikkeling op de SEH en medisch
-              mobiel trauma team.
+              ontwikkelingen, waar wij als verpleegkundige én patiënten veel mee
+              te maken hebben. Een aantal van deze ontwikkelingen zal ik
+              hieronder beschrijven welke een invloed hebben nu tijdens mijn
+              ontwikkeling, maar ook later in mijn toekomstige vakgebied naar de
+              ontwikkeling op de SEH en medisch mobiel trauma team.
             </p>
             <p>
-              Een van de grootste ontwikkelingen in de zorg voor de komende jaren is de
-              vergrijzing. Er is een toename van ouderen welke zorg nodig
-              hebben. Hierbij komen ook steeds meer tegelijk aandoeningen bij
-              kijken, comorbiditeit genoemd. Wat hierbij vooral verandert is
+              Een van de grootste ontwikkelingen in de zorg voor de komende
+              jaren is de vergrijzing. Er is een toename van ouderen welke zorg
+              nodig hebben. Hierbij komen ook steeds meer tegelijk aandoeningen
+              bij kijken, comorbiditeit genoemd. Wat hierbij vooral verandert is
               kortere ziekenhuis opnames en steeds complexere zorg thuis. Dit
               vraagt om een aanpassing aan het zorgsysteem en de vaardigheden
               van de verpleegkundige thuis en patiënten (Volksgezondheid, 2018).
               Deze ontwikkeling zal ook de acute zorg benaderen, mensen worden
               ouder, vallen en leven langer met een ziektebeeld. Hierdoor is een
               opname via de SEH, niet meer weg te denken. Belangrijk om hierin
-              te ontwikkelen en mee te gaan met de vergrijzing als verpleegkundigen.
+              te ontwikkelen en mee te gaan met de vergrijzing als
+              verpleegkundigen.
             </p>
             <p>
               Een ander niet te missen ontwikkeling is de toenemende
@@ -73,16 +74,17 @@ class Trends extends React.Component {
               Nederlandse gezondheidszorg dit wil aanpakken (Kennisplein Zorg
               voor Beter, 2019) & (Han university of applied sciences, 2019).
             </p>
-            <p style={{fontWeight: "bold", margin: "0"}}>Persoonlijke visie in relatie tot de ontwikkelingen en trends: </p>
+            <p style={{ fontWeight: "bold", margin: "0" }}>
+              Persoonlijke visie in relatie tot de ontwikkelingen en trends:{" "}
+            </p>
             <p>
-              
-              Ik vind het erg belangrijk dat niet alleen ik, maar alle verpleegkundigen, mee
-              ontwikkelen in de zorg. De vergrijzing is een feit waar iedereen
-              in de zorg mee te maken gaat krijgen. Zowel revalidatie,
-              verzorgingshuizen als ziekenhuizen en ook de acute zorg waar mijn
-              droom ligt. Ook de digitalisering is een feit en de komende jaren
-              zal dit nog flink ontwikkelen, ook hiervoor geld dat alle
-              zorgorganisaties hiermee te maken krijgen. Ik vind de
+              Ik vind het erg belangrijk dat niet alleen ik, maar alle
+              verpleegkundigen, mee ontwikkelen in de zorg. De vergrijzing is
+              een feit waar iedereen in de zorg mee te maken gaat krijgen. Zowel
+              revalidatie, verzorgingshuizen als ziekenhuizen en ook de acute
+              zorg waar mijn droom ligt. Ook de digitalisering is een feit en de
+              komende jaren zal dit nog flink ontwikkelen, ook hiervoor geld dat
+              alle zorgorganisaties hiermee te maken krijgen. Ik vind de
               digitalisering goed, omdat het ook veel voordelen heeft.
               Bijvoorbeeld de operatierobots zorgen voor nauwkeurig werk en
               korter herstel. Ook de eenzaamheid bij ouderen kan door
@@ -92,6 +94,7 @@ class Trends extends React.Component {
             </p>
           </Grid.Row>
         </Grid>
+        <br />
       </Segment>
     );
   }

@@ -76,6 +76,7 @@ class Analysis extends React.Component {
             </p>
           </Grid.Row>
         </Grid>
+        <br />
       </Segment>
     );
   }
