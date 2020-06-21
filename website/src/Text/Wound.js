@@ -26,7 +26,7 @@ class Wound extends React.Component {
                 ingewikkelde zorg vind. Dit komt door de vele soorten wonden die
                 kunnen ontstaan en welke allemaal een andere wondzorg nodig
                 hebben. Als stagiaire op de afdeling Zorgkern Beweging heb ik
-                regelmatig met de wondverpleegkundige gewerkte en heb ik veel
+                regelmatig met de wondverpleegkundige gewerkt en heb ik veel
                 grote wonden gezien, die speciale zorg nodig hebben. Wanneer ik
                 kijk naar mijn toekomstbeeld op de SEH, is dit ook een nuttige
                 workshop voor mij, omdat ik hier ook regelmatig mensen met
@@ -39,7 +39,7 @@ class Wound extends React.Component {
                 veel ontwikkeld en naar verwachting zal hier de komende jaren
                 nog meer ontwikkeling in komen. Hierdoor is het voor mij als
                 verpleegkundige van belang dat ik een leven lang leer, zodat er
-                met het beste bewijs wordt gewerkt aan de wondzorg.{" "}
+                met het beste bewijs wordt gewerkt aan de wondzorg.
               </p>
             </Grid.Column>
             <Grid.Row></Grid.Row>

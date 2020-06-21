@@ -1,5 +1,5 @@
 import React from "react";
-import {  Grid, Header, Image, Segment } from "semantic-ui-react";
+import { Grid, Header, Image, Segment } from "semantic-ui-react";
 import swot from "../assets/swot.png";
 class Analysis extends React.Component {
   render() {
@@ -8,7 +8,7 @@ class Analysis extends React.Component {
         <Grid container stackable verticalAlign="middle">
           <Grid.Row>
             <Header as="h3" style={{ fontSize: "2em", color: "midnightblue" }}>
-             Kwaliteiten en tekorten
+              Kwaliteiten en tekorten
             </Header>
             <p>
               Om inzicht te krijgen in mijn kwaliteiten en tekorten gerelateerd
@@ -21,8 +21,8 @@ class Analysis extends React.Component {
               kan ik mijn kwaliteiten in de zorg inzetten en ontwikkelen in mijn
               valkuilen.
             </p>
-{/* <SWOT/> */}
-<Image src={swot}/>
+            {/* <SWOT/> */}
+            <Image src={swot} />
             <p>
               <br />
               Naast het maken van een SWOT-analyse heb ik een leerstijlen test
@@ -43,7 +43,7 @@ class Analysis extends React.Component {
               <li>Duidelijkheid is essentieel voor een creatieve leerstijl</li>
               <li>Originele ideeën, welke een ander nog niet bedacht heeft.</li>
             </ul>
-            
+
             <p>
               Als ik naar deze uitslag kijk, ben ik het er mee eens. Ik houd
               graag van dingen doen en creatief na te denken hoe ik bepaalde
@@ -54,8 +54,11 @@ class Analysis extends React.Component {
               nadenken over de oplossing.
             </p>
             <p>
-              Kwaliteiten en tekorten in relatie tot mijn toekomstige vakgebied
-              SEH en mobiel medisch traumateam: <br />
+              <b>
+                Kwaliteiten en tekorten in relatie tot mijn toekomstige
+                vakgebied SEH en mobiel medisch traumateam:
+              </b>
+              <br />
               De kwaliteiten die uit de SWOT-analyse en leerstijlen test zijn
               gekomen zijn kwaliteiten welke ik goed kan toepassen in de acute
               zorg als verpleegkundige. Een klinische blik is erg belangrijk,
