@@ -20,7 +20,7 @@ class Projects extends React.Component {
               Een leven lang leren begint bij mezelf en een belangrijk onderdeel
               hierin is het volgen van klinische lessen, bijscholing, workshops
               en activiteiten volgen welke bijdrage aan mijn ontwikkeling als
-              verpleegkundige. Hogeschool Rotterdam bood mij een aantal interne
+              verpleegkundige. Hogeschool Rotterdam boodt mij een aantal interne
               workshops waarin in kon oriënteren en ontwikkelen in wat ik wil in
               de toekomst als verpleegkundige. Ook heb ik twee activiteiten
               buiten school gevolgd, zodat ik ook in de praktijk kon zien wat ik
