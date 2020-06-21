@@ -5,6 +5,8 @@ import Acute from "../Text/Acute";
 import Wound from "../Text/Wound";
 import Extern from "../Text/Extern";
 import participation from "../assets/bewijs.pdf";
+import Safety from "../Text/Safety";
+import EHBO from "../Text/EHBO";
 class Projects extends React.Component {
   render() {
     return (
@@ -27,7 +29,7 @@ class Projects extends React.Component {
             <div
               style={{ width: "100%", paddingTop: "1em", paddingBottom: "3em" }}
             >
-              <a href={participation} target="_blank">
+              <a href={participation} target="_blank" rel="noopener noreferrer">
                 <Button
                   fluid
                   style={{
@@ -37,7 +39,7 @@ class Projects extends React.Component {
                     marginLeft: "20%",
                   }}
                 >
-                  Bewijs deelname activiteiten
+                  Open bewijs van deelname
                 </Button>
               </a>
             </div>
@@ -46,7 +48,12 @@ class Projects extends React.Component {
             <Divider />
             <Wound />
             <Divider />
+            <Safety />
+            <Divider />
             <Extern />
+            <Divider />
+            <EHBO />
+            <Divider />
           </Grid.Row>
         </Grid>
       </Segment>
