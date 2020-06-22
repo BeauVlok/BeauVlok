@@ -29,7 +29,7 @@ class Analysis extends React.Component {
               gedaan. Hieruit komt naar voren wat voor type ik ben en waar ik
               goed in ben. Uit deze test kwam naar voren dat ik een creatieve
               leerstijl heb (leerstijlen test gebaseerd op de theorie van David
-              Kolb).Hieronder beknopt weergegeven wat deze leerstijl inhoud:
+              Kolb). Hieronder beknopt weergegeven wat deze leerstijl inhoud:
             </p>
             <ul>
               <li>

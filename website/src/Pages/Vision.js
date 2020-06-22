@@ -42,7 +42,7 @@ class Vision extends React.Component {
                     verpleegkundig leiderschap het werken aan verbeterpunten en
                     behouden van kwaliteitszorg, eerlijkheid tonen naar de
                     patiënt(en), in acht nemen van eigen bevoegd en bekwaamheid,
-                    goede samenwerken met andere disciplines en regie nemen om
+                    goede samenwerking met andere disciplines en regie nemen om
                     te blijven (mee) ontwikkelen in de gezondheidszorg en dit te
                     delen met collega’s en te integreren op de afdeling.
                   </p>

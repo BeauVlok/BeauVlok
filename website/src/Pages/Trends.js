@@ -12,8 +12,8 @@ class Trends extends React.Component {
             </Header>
             <p>
               Binnen de gezondheidszorg zijn de laatste jaren veel
-              ontwikkelingen, waar wij als verpleegkundige én patiënten veel mee
-              te maken hebben. Een aantal van deze ontwikkelingen zal ik
+              ontwikkelingen, waar wij als verpleegkundigen én patiënten veel
+              mee te maken hebben. Een aantal van deze ontwikkelingen zal ik
               hieronder beschrijven welke een invloed hebben nu tijdens mijn
               ontwikkeling, maar ook later in mijn toekomstige vakgebied naar de
               ontwikkeling op de SEH en medisch mobiel trauma team.
@@ -66,7 +66,7 @@ class Trends extends React.Component {
               verpleegkundigen, waarbij de hbo verpleegkundigen de functie als
               regieverpleegkundige krijgen. Hierbij horen naast je
               verpleegkundige functies nieuwe functies als het indiceren en
-              organiseren van zorg, klinisch redeneren in complexe situatie en
+              organiseren van zorg, klinisch redeneren in complexe situaties en
               het toepassen van EBP. Met dit nieuwe wetvoorstel in 2019, is veel
               ophef geweest van de verpleegkundigen welke deze taken al jaren
               uitvoert en dat dadelijk ineens niet meer mogen doen. Naar
